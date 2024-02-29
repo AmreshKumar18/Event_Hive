@@ -152,21 +152,6 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  .why {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .why-intro {
-    width: 100%;
-    margin: 10px 50px;
-  }
-
-  .why-icon {
-    margin: 20px;
-  }
-}
 
 /* Show Events */
 .smallevent {
@@ -201,7 +186,9 @@ a {
   justify-content: space-evenly;
 }
 
-
+.card{
+  width: 250px;
+}
 /* Contact us */
 
 .img-contact {
@@ -403,7 +390,7 @@ textarea::-webkit-input-placeholder {
   margin: 30px 60px;
 }
 
-.card{
+.card {
   padding: 7px;
   margin: 10px;
 }
@@ -510,6 +497,12 @@ h1 {
   width: 100%;
   background-position: center;
   opacity: 0.7;
+}
+
+.analysis h1,
+p {
+  text-align: center;
+  align-items: center;
 }
 
 .analystics-card {
@@ -741,5 +734,68 @@ h1 {
     width: 86%;
     margin-left: 27px;
     margin-top: 10px;
+  }
+}
+
+/* Header- Responsive */
+
+@media screen and (max-width: 480px) {
+  .header-content p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header-content p {
+    text-align: center;
+  }
+}
+
+/* why Intro responsive */
+
+@media screen and (max-width: 480px) {
+  .why {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    align-items: center;
+  }
+
+  .why-intro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .why {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    align-items: center;
+  }
+
+  .why-intro {
+    width: 100%;
+    margin: 25px;
+  }
+}
+
+/* Analytics Responsive */
+
+@media screen and (max-width: 480px) {
+  .analysis p {
+    font-size: 12px;
+  }
+
+  .analysis h1 {
+    font-size: 16px;
+  }
+}
+
+
+/*  */
+@media screen and (max-width: 480px) {
+  .card{
+    width: 85%;
   }
 }

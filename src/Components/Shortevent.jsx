@@ -14,7 +14,7 @@ const Shortevent = ({ eventlist }) => {
         {eventlist.map((eventItem, eventIndex) => {
           return (
             <>
-              <div class="card" style={{ width: 250 }}>
+              <div class="card">
                 <img
                   class="card-img-top"
                   src={eventItem.url}

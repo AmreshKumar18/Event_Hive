@@ -17,7 +17,6 @@ import Events from "./Components/Events";
 import DetailsEvent from "./Components/DetailsEvent";
 import Blog from "./Components/Blog";
 import Login from "./Components/Login";
-import Error from "./Components/Error";
 import Event_create from "./Admin/Event_create";
 
 const router = createBrowserRouter(
@@ -30,7 +29,7 @@ const router = createBrowserRouter(
       <Route path="/event-details" element={<DetailsEvent />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/admin" element = {<Event_create />} />
+      <Route path="/admin" element={<Event_create />} />
       {/* <Route path="*" element={<Error />} /> */}
     </Route>
   )
@@ -46,6 +45,5 @@ root.render(
     }}
   >
     <RouterProvider router={router} />
-    
   </Auth0Provider>
 );
